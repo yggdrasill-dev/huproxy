@@ -10,4 +10,4 @@ FROM alpine:latest
 EXPOSE 8086
 WORKDIR /
 COPY --from=0 /app/ .
-CMD ["/huproxy"]
+ENTRYPOINT ["/huproxy"]
